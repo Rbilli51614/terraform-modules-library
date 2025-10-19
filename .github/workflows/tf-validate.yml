@@ -1,0 +1,25 @@
+name: terraform-validate
+on:
+  pull_request:
+    paths:
+      - 'modules/**'
+      - 'examples/**'
+      - '.github/workflows/tf-validate.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.7.5
+      - name: fmt check
+        run: terraform fmt -check -recursive
+      - name: validate examples
+        run: |
+          for d in $(find examples -maxdepth 2 -type f -name main.tf -exec dirname {} \;); do
+            echo "Validating $d"
+            (cd "$d" && terraform init -backend=false && terraform validate)
+          done
+
