@@ -1,7 +1,10 @@
 data "aws_iam_policy_document" "assume" {
   statement {
     actions = ["sts:AssumeRole"]
-    principals { type = "Service" identifiers = [var.assume_role] }
+    principals { 
+      type = "Service" 
+      identifiers = [var.assume_role] 
+      }
   }
 }
 
