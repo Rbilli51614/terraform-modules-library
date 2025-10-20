@@ -1,13 +1,6 @@
-variable "vpc_cidr" { type = string }
-variable "region" { type = string }# Get all available AZs in the region
 data "aws_availability_zones" "available" {
   state = "available"
 }
-# Example: public subnets
-variable "public_subnets" {
-  type    = list(string)
-  default = ["10.10.1.0/24", "10.10.2.0/24"]
-} 
 # Create subnets dynamically across AZs
 resource "aws_subnet" "public" {
   for_each = { for idx, cidr in var.public_subnets : cidr => idx }
