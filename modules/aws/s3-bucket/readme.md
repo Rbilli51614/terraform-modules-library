@@ -1,11 +1,8 @@
 🪣 Terraform AWS S3 Bucket Module
-
-
-
-
-
-
-
+[![Terraform](https://img.shields.io/badge/Terraform-1.7%2B-7B42BC?logo=terraform)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-S3-orange?logo=amazon-aws)](https://aws.amazon.com/s3/)
+[![GCP](https://img.shields.io/badge/Multi--Cloud-Supported-blue?logo=google-cloud)](https://cloud.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 This Terraform module creates a secure, versioned, and optionally encrypted S3 bucket in AWS.
 It includes built-in controls for public access blocking, encryption, and lifecycle management — all customizable through variables.
