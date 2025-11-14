@@ -1,4 +1,11 @@
-variable "name" { type = string }
+variable "project" {
+    type    = string
+    default = "gcpclass6-5rb"
+}
+variable "name" {
+    type = string 
+    default = "rb-test-bucket-51614"
+    }
 variable "location" {
 type = string
 default = "US"

@@ -1,4 +1,5 @@
-resource "google_storage_bucket" "this" {
+resource "google_storage_bucket" "rb-test-bucket-51614" {
+  project                     = var.project
   name                        = var.name
   location                    = var.location
   uniform_bucket_level_access = var.uniform_access
@@ -10,5 +11,5 @@ resource "google_storage_bucket" "this" {
   }
 }
 
-output "bucket_name" { value = google_storage_bucket.this.name }
+output "bucket_name" { value = google_storage_bucket.rb-test-bucket-51614.name }
 
