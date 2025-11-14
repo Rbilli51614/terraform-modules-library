@@ -7,7 +7,6 @@
 ![GCP](https://img.shields.io/badge/Google%20Cloud-Platform-blue?logo=googlecloud&logoColor=white)
 ![Cloud Run](https://img.shields.io/badge/CloudRun-Active-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Terraform CI](https://github.com/<USERNAME>/<REPO>/actions/workflows/terraform.yml/badge.svg)
 
 
 Reusable, documented Terraform modules for quick, secure cloud provisioning
