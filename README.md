@@ -15,8 +15,6 @@ Reusable, documented Terraform modules for quick, secure cloud provisioning
 
 ## tf-modules-library
 
-
-
 tf-modules-library/
 ├─ README.md
 ├─ LICENSE
