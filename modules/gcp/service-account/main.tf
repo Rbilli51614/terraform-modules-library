@@ -1,4 +1,5 @@
 resource "google_service_account" "sa" {
+  project      = var.project
   account_id   = var.account_id
   display_name = coalesce(var.display_name, var.account_id)
 }
