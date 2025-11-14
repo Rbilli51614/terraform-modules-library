@@ -1,6 +1,7 @@
 resource "google_cloud_run_service" "svc" {
-  name     = var.service_name
+  name     = var.service-name
   location = var.region
+  project = var.project
   template {
     spec {
       containers {
@@ -12,6 +13,7 @@ resource "google_cloud_run_service" "svc" {
 }
 
 resource "google_cloud_run_service_iam_member" "invoker" {
+  project = var.project 
   count  = var.allow_unauthenticated ? 1 : 0
   service = google_cloud_run_service.svc.name
   location = var.region

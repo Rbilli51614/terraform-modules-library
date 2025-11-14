@@ -1,4 +1,7 @@
-variable "name" { type = string }
+variable "name" { 
+    type = string
+    default = "my-bucket-9876098730928709-09238-0893" 
+    }
 variable "block_public_access" { 
     type = bool 
     default = true 
