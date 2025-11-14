@@ -1,5 +1,15 @@
 # Terraform Modules Library (AWS + Google Cloud)
 
+<!-- Project Badges -->
+![Terraform](https://img.shields.io/badge/Terraform-1.7.7-blue?logo=terraform&logoColor=white)
+![Terraform fmt](https://img.shields.io/badge/Terraform-fmt-9cf?logo=terraform&logoColor=white)
+![Terraform Validate](https://img.shields.io/badge/Terraform-validate-green?logo=terraform&logoColor=white)
+![GCP](https://img.shields.io/badge/Google%20Cloud-Platform-blue?logo=googlecloud&logoColor=white)
+![Cloud Run](https://img.shields.io/badge/CloudRun-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Terraform CI](https://github.com/<USERNAME>/<REPO>/actions/workflows/terraform.yml/badge.svg)
+
+
 Reusable, documented Terraform modules for quick, secure cloud provisioning
 
 ## Repo Layout
